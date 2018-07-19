@@ -1,0 +1,262 @@
+
+*{
+	margin: 0;
+}
+.toggle-nav {
+	display:none;
+	float: right;
+	margin-right: 20px;
+}
+.menu ul {
+	display:inline-block;
+	list-style-type: none;
+	padding-left: 3.6%;
+}
+.menu li {
+	display: inline-block;
+	font-size:17px;
+	padding: 18px 20px 16px 10px;
+	font-family: Arial;
+	font-weight: 200;
+	font-size: 14px;
+}
+.menu li:last-child {
+	margin-right:0px;
+}
+.menu a{
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: 200;
+	color:#909497   ;
+	font-size: 14px;
+}
+.menu #layout{
+	font-size: 17px;
+	font-weight: 500;
+}
+.toggle-nav {
+	float: right;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding:10px 14px 10px 9px;
+	border-radius:3px;
+	background:#909497  ;
+	font-size:20px;
+	transition:color linear 0.15s;
+}
+.menu{
+	width: 100%;
+	background-color: black;
+	margin-bottom: 70px;	
+}
+.sample{
+	width: 92%;
+	margin:auto;
+	background-color:#F2F3F4        ;
+	padding-top: 65px;
+	padding-bottom: 60px;
+	border-radius: 5px;
+	text-align: justify;
+	clear: both;
+}
+.call_action{
+	border: none;
+	background-color: #2874A6     ;
+	color: white;
+	padding: 9px 15px;
+	border-radius: 5px;
+	margin-left: 70px;
+}
+.h1,.h2{
+	padding-left: 70px;
+	padding-right: 100px;
+	font-family: Arial;
+	font-weight: 50;
+}
+.h2{
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	color: #17202A ;
+}
+.h1{
+	
+	font-size:63px;
+	font-weight: 50;
+	margin-bottom: 0;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	color:#17202A  ;
+}
+.main_div{
+	width: 92%;
+	margin:auto;
+	margin-top: 0;
+}
+.child{
+	width: 23%;
+	float: left;
+	margin-right: 2.4%;
+	border: 1px solid #E5E7E9;
+	border-radius:4px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.child:nth-child(4n){
+	float: right;
+	margin-right: 0%;
+}
+img{
+	width: 97%;
+	margin:auto;
+	margin-top: 1.5%;
+}
+.child h2{
+	font-family: Arial;
+	font-weight: 200;
+	margin-bottom: 0;
+	margin-top: 15px;
+	margin-bottom: 7px;
+}
+.child h3{
+	font-weight: 100;
+	font-family: Arial;
+	font-size: 16px;
+	margin-bottom: 15px;
+	color:#2C3E50   ;
+}
+.buy_now,.more_info{
+	border: none;
+	padding: 9px 15px;
+	border-radius: 5px;
+	
+}
+.buy_now{
+	background-color: #2874A6  ;
+	margin-bottom: 5px;
+	color:white;
+}
+.more_info{
+	background-color:#E5E7E9; 
+	color:black;
+}
+.top_line{
+	width: 92%;
+	margin:auto;
+	border:.5px solid #E5E7E9;
+	margin-top: 30px;
+	margin-bottom: 40px;	
+}
+.feature{
+	width: 92%;
+	margin:auto;
+	margin-bottom: 12px;
+	color: #17202A  ;
+}
+.feature h2{
+	font-weight: 100;
+	font-family: Arial;
+}
+.footer{
+	width:92%;
+	margin: auto;
+	float: left;
+	border:.5px solid #E5E7E9;
+	margin-left: 4%;
+	margin-top: 41px;
+	margin-bottom: 55px;
+}
+.copyright{
+	width:92%;
+	margin: auto;
+	float: left;
+	margin-left: 4%;
+	margin-top:0;
+	margin-bottom: 65px;
+}
+@media screen and (max-width: 1093px){
+	.child:nth-child(4n){
+		float: left;
+	}
+	.child{
+		width:30.6%;
+		margin-bottom: 24px;
+	}
+}
+@media screen and (max-width: 760px){
+	.h1{
+		font-size:46px;
+	}
+	.h2{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 590px){
+	.h1,.h2{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media screen and (max-width: 665px){
+	.child{
+		width: 47%;
+	}
+	.child:nth-child(4n){
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 500px){
+	.h1{
+		font-size:30px;
+	}
+	.h2{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 380px){
+	.child{
+		width:100%;
+		margin-right: 0;
+	}
+	.toggle-nav:hover{
+		background-color:#D0D3D4;
+	}
+	.menu {
+		position:relative;
+		top: 0;
+		float: left;	
+		display:block;
+	}
+	.menu ul.active {
+		display:none;
+	}
+	.menu ul {
+		width:150px;
+		position:absolute;
+		top:120%;
+		right :15px;
+		padding:10px 18px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+	}
+	.menu ul:after {
+		width:0px;
+		height:0px;
+		position:absolute;
+		top:0%;
+		content:'';
+		transform:translate(1000%, -100%);
+		border-left:7px solid transparent;
+		border-right:7px solid transparent;
+		border-bottom:7px solid #303030;
+	}
+	.menu li {
+		margin:5px 0px 5px 0px;
+		display:block;
+	}
+	.menu a {
+		display:block;
+		color:#566573;
+	}
+}

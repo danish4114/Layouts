@@ -196,6 +196,9 @@ img{
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+	.call_action{
+		margin-left: 30px;
+	}
 }
 @media screen and (max-width: 665px){
 	.child{
